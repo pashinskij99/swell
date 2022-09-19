@@ -1,0 +1,217 @@
+@import "../../styles/mixins";
+
+.container {
+  @media screen and (max-width: 992px) {
+    background: #FFFFFF;
+    max-width: none;
+    padding: 0;
+    margin-top: 70vh;
+  }
+  @media screen and (max-width: 767px) {
+    background: #FFFFFF;
+    max-width: none;
+    padding: 0;
+    margin-top: 60vh;
+  }
+  width: 100%;
+}
+
+.inner_wrapper {
+  width: 100%;
+  height: 100%;
+  //position: absolute;
+  //left: 0;
+  //top: 0;
+  //display: flex;
+}
+
+.wrapper {
+  //flex: 1 0;
+  width: 100%;
+  height: 100%;
+  //position: relative;
+  display: flex;
+  @media screen and (max-width: 992px) {
+    display: block;
+  }
+  .background_content {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 55%;
+    background: #FFFFFF;
+    z-index: -1; 
+    @media screen and (max-width: 992px) {
+      position: sticky;
+      width: 100%;
+      left: 0;
+      top: 100vh;
+    }
+  }
+  .three {
+    width: 45%;
+    @media screen and (max-width: 992px){
+      display: none;
+    }
+  }
+  .header {
+    width: 55%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: rem(94);
+    background: #fff;
+    z-index: 1;
+    @media screen and (max-width: 992px) {
+      display: none;
+    }
+  }
+  .content {
+    width: 55%;
+    padding-top: rem(94);
+    @media screen and (max-width: 992px) {
+      width: 100%;
+      max-width: 750px;
+      padding: rem(64) 15px;
+      margin: 0 auto;
+    }
+    @media screen and (max-width: 767px) {
+      max-width: none;
+    }
+    .inner_content {
+      pointer-events: auto;
+      padding-left: 8%;
+      @media screen and (max-width: 992px) {
+        padding: 0;
+      }
+      h2 {
+      }
+      .descr {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: rem(25);
+        @media screen and (max-width: 767px) {
+          flex-direction: column;
+        }
+        p {
+          width: 35%;
+          color: var(--mainColor2);
+          &:last-child {
+            width: 48%;
+          }
+          @media screen and (max-width: 767px) {
+            width: 100%;
+            &:last-child {
+              width: 100%;
+            }
+          }
+        }
+      }
+      .images_wrapper {
+        margin-top: rem(124);
+        display: flex;
+        justify-content: space-between;
+        @media screen and (max-width: 992px) {
+          margin-top: rem(80);
+        }
+        @media screen and (max-width: 767px) {
+          flex-direction: column;
+        }
+        li {
+          height: fit-content;
+          width: 49%;
+          @media screen and (max-width: 767px) {
+            width: 100%;
+          }
+          img {
+            width: 100%;
+          }
+        }
+      }
+      .image_block {
+        height: 100%;
+        width: 100%;
+        margin-top: rem(55);
+        .images_wrapper_full {
+          position: absolute;
+          right: 0;
+          width: 55%;
+          @media screen and (max-width: 992px) {
+            width: 100%;
+          }
+          img {
+            width: 100%;
+          }
+        }
+        .images_wrapper_padding {
+          padding: 0 4.5%;
+          @media screen and (max-width: 992px) {
+            padding: 0 15px;
+            max-width: 750px;
+            margin: 0 auto;
+            left: 0;
+            right: 0;
+          }
+        }
+      }
+      .descr_1 {}
+      .descr_2 {}
+      .descr_3 {
+        .descr {
+          p {
+            width: 100%;
+          }
+        }
+      }
+      .descr_4, .descr_5 {
+        margin: rem(45) 0;
+        .text_1 {
+          margin: 0;
+        }
+        .descr_list {
+          .title_list {
+            font-family: var(--titleFont2);
+            font-weight: 600;
+            font-size: rem(28);
+            color: var(--mainColor2);
+            @media screen and (max-width: 767px) {
+              margin-top: rem(64);
+            }
+          }
+          ul {
+            margin-top: rem(25);
+            font-family: var(--textFont);
+            font-weight: 400;
+            font-size: rem(18);
+            //line-height: 22px;
+            color: var(--mainColor2);
+            @media screen and (max-width: 1200px) {
+              // font-size: rem(16);
+            }
+            .list_item {
+              display: flex;
+              align-items: center;
+              span {
+                display: block;
+                height: rem(4);
+                width: rem(4);
+                background: var(--mainColor2);
+                border-radius: 50%;
+                margin-right: rem(10);
+              }
+            }
+          }
+        }
+        .images_wrapper {
+          margin-top: rem(60);
+          .image {
+            width: auto;
+            margin-right: rem(16);
+          }
+        }
+      }
+    }
+  }
+}

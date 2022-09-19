@@ -1,0 +1,6 @@
+SM_Wall_02, SM_Wall_01, SM_Wall_03, SM_Wall_04 - 01
+SM_WaterBorder_01, SM_Ball_01, SM_Ball_02, SM_Ball_03, SM_Sand_02, SM_Sand_01, SM_Sand_03, SM_SoftBorder_01, SM_Chair_01, SM_Chair_02, SM_Chair_03 - 02
+SM_Floor_01, SM_Floor_02, SM_Floor_03 - 03
+SM_Floor_05, SM_Roof_01 - 04
+SM_Pillars_01, SM_Swell_01, SM_Swell_02, SM_Swell_03, SM_Swell_04, SM_Swell_05, SM_SwellBorder_01 - 05
+SM_Background_01 - background

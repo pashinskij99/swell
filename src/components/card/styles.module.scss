@@ -1,0 +1,111 @@
+@import '../../styles/mixins';
+
+.card_wrapper {
+	&[data-disabled="true"] {
+		.card_wrapper_image {
+			&:hover {
+				img {
+					transform: scale(1, 1);
+				}
+			}
+		}
+		.card_body {
+			.description {
+				color: rgba(0, 0, 0, 0.5);
+			}
+		}
+	}
+	.card_wrapper_image {
+		display: flex;
+		overflow: hidden;
+		width: 100%;
+		img {
+			width: 100%;
+			transform: scale(1, 1);
+			transition: all 0.3s linear;
+		}
+		&:hover {
+			img {
+				transform: scale(1.2, 1.2);
+			}
+		}
+	}
+	.wrapper {
+		display: block;
+		overflow: hidden;
+	}
+	.card_body {
+		display: flex;
+		align-items: flex-end;
+		justify-content: space-between;
+		.description {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+
+			font-family: var(--textFont);
+			font-weight: 500;
+			font-size: rem(18);
+			color: #000000;
+			.name {
+				overflow: hidden;
+				margin: rem(10) 0 rem(10);
+				// transition: color 0.3s linear;
+				&:hover {
+					color: var(--secondaryColor2);
+				}
+				span {
+					display: inline-block;
+					// transform: translate(0px, 100%) rotate(0.0001deg);
+					// transition: transform 0.1s linear;
+				}
+			}
+			.descr {
+				font-weight: 300;
+				font-size: rem(16);
+				overflow: hidden;
+				span {
+					display: inline-block;
+					// transform: translate(0px, 100%) rotate(0.0001deg);
+					// transition: transform 0.5s linear;
+				}
+			}
+		}
+		.card_btn_wrapper {
+			overflow: hidden;
+			span {
+				display: inline-block;
+				// transform: translate(0px, 100%) rotate(0.0001deg);
+				// transition: transform 0.5s linear;
+			}
+		}
+	}
+
+	&[data-size="big"] {
+		// width: rem(822);
+	}
+
+	@media screen and (max-width: 1200px) {
+		&[data-size="small"] {
+			// width: rem(442);
+			// height: rem(382);
+		}
+		&[data-size="big"] {
+			// width: rem(610);
+			// height: rem(463);
+		}
+	}
+	@media screen and (max-width: 767px) {
+		// width: rem(394);
+		&[data-size="small"] {
+			// width: rem(394);
+			// height: rem(370);
+		}
+		&[data-size="big"] {
+			// width: rem(822);
+		}
+	}
+}
+
+// transform: translate(0px, 100%) rotate(0.0001deg);
+// transform: rotate(0.0001deg);

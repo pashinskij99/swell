@@ -1,0 +1,29 @@
+body {
+  --mainColor1: #fffdfc;
+  --mainColor2: #0c0b0b;
+  --mainColor3: #474441;
+  --mainColor4: #000000;
+  --secondaryColor1: #EBBEB9;
+  --secondaryColor2: #F6B2A6;
+  --gradient: linear-gradient(359.42deg, #71708E 0.6%, #FFA1A4 110.64%);
+
+  --mainTextColor1: #fffdfc;
+  --mainTextColor2: #141414;
+  --secondaryTextColor2: rgba(20, 20, 20, 0.5);
+
+  // --paddingWrapper: 0rem;
+
+  --titleFont: 'Playfair Display', serif;
+  --textFont: 'Quicksand', sans-serif;
+  --titleFont2: 'Nunito', sans-serif;
+
+  --xl: 1200px;
+  --lg: 992px;
+  --md: 767px;
+}
+
+@media screen and (max-width: 1200px) {
+  body {
+    // --mainColor1: #FDFAF5;
+  }
+}

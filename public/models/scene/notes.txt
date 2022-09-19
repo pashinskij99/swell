@@ -1,0 +1,21 @@
+SM_Background_01 - background_light_01
+SM_Background_02 - background_light_02
+SM_Background_03 - background_light_03
+SM_Background_04 - background_light_04
+SM_Background_05 - background_light_05
+
+SM_Wall_01 - wall_light_01 / wall_ao_01
+SM_Wall_02 - wall_light_02 / wall_ao_02
+SM_Wall_03 - wall_light_03 / wall_ao_03
+SM_Wall_04, SM_PALM_01, SM_FloorBorder_01 - wall_light_04 / wall_ao_04
+SM_OuterWall_01 - outerWall_light_01 / outerWall_ao_01
+SM_Roof_01 - roof_light_01 / roof_ao_01
+M_Floor_01 - floor_light_01 / floor_ao_01
+SM_Floor_01 - floor_light_02 / floor_ao_02
+SM_Chair_01 - chair_light_01 / chair_ao_01
+SM_SWELL_01 - swell_light_01 / swell_ao_01
+SM_Border_02 - border_ao_01 / border_light_01
+SM_Sand_01, SM_Sand_02, SM_Sand_03, SM_Sand_04 - sand_light_01 / sand_ao_01
+SM_WaterWall_01 - waterWall_ao_01 / waterWall_light_01
+SM_Clumb_01 - clumb_ao_01 / clumb_light_01
+SM_Bush_01, SM_Bush_02

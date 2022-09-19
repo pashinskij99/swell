@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Inter&family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600;800&display=swap');
+@import '../styles/mixins';
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  color: white;
+}
+
+body {
+  //height: 100%!important;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: var(--textFont);
+}
+
+*, *:before, *:after {
+  // cursor: none;
+  box-sizing: inherit;
+  @media screen and (max-width: 767px) {
+    cursor: auto;
+  }
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  // cursor: none;
+  @media screen and (max-width: 767px) {
+    cursor: auto;
+  }
+}
+
+a {
+  // cursor: none;
+  text-decoration: none;
+  @media screen and (max-width: 767px) {
+    cursor: pointer;
+  }
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: var(--gradient);
+  // cursor: none;
+  .text-1 {
+    font-family: var(--textFont);
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0em;
+  }
+
+  .text-2 {
+    font-family: var(--textFont);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0em;
+  }
+  @media screen and (max-width: 767px) {
+    cursor: auto;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  font-family: var(--titleFont2);
+  font-weight: 800;
+  font-size: 86px;
+  line-height: 100px;
+  letter-spacing: 0em;
+  color: var(--mainColor4);
+  @media screen and (max-width: 1200px) {
+    font-size: rem(64);
+    font-weight: 600;
+    letter-spacing: 0em;
+  }
+  @media screen and (max-width: 767px) {
+    font-weight: 800;
+    font-size: rem(28);
+    letter-spacing: 0em;
+  }
+}
+h2 {
+  font-family: var(--titleFont2);
+  font-weight: 600;
+  font-size: rem(64);
+  letter-spacing: 0em;
+  color: var(--mainColor4);
+  @media screen and (max-width: 1200px) {
+    font-size: rem(48);
+    letter-spacing: 0em;
+  }
+  @media screen and (max-width: 767px) {
+    font-size: rem(28);
+  }
+}
+h3 {
+  font-family: var(--titleFont2);
+  font-size: rem(48);
+  font-weight: 600;
+  letter-spacing: 0em;
+  color: var(--mainColor4);
+}
+h4 {
+  font-family: var(--titleFont2);
+  font-size: rem(28);
+  font-weight: 600;
+  letter-spacing: 0em;
+  color: var(--mainColor4);
+}
+
+header {
+  font-family: var(--textFont);
+  font-weight: 300;
+  font-size: rem(16);
+  line-height: 20px;
+  letter-spacing: 0em;
+}
+
+button {
+  // cursor: none;
+  &.text-1 {
+    font-family: var(--textFont);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0em;
+    @media screen and (max-width: 1200px) {
+      font-family: var(--textFont);
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 20px;
+      letter-spacing: 0em;
+    }
+  }
+
+  &.text-2 {
+    font-family: var(--textFont);
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0em;
+    @media screen and (max-width: 1200px) {
+      font-family: var(--textFont);
+      font-weight: 300;
+      font-size: 12px;
+      line-height: 15px;
+      letter-spacing: 0em;
+    }
+  }
+
+  &.text-3 {
+    font-family: var(--textFont);
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0em;
+    @media screen and (max-width: 1200px) {
+      font-family: var(--textFont);
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 22px;
+      letter-spacing: 0em;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    cursor: pointer;
+  }
+}
+
+.bread-crumb {
+  font-family: var(--textFont);
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0em;
+}
+
+#__next {
+  min-height: 100vh;
+  display: grid;
+  grid-auto-rows: auto 1fr auto;
+}
+
+.container {
+  display: block;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+  flex: 1 0;
+  @media screen and (max-width: 1200px) {
+    max-width: 970px;
+  }
+  @media screen and (max-width: 992px) {
+    max-width: 750px;
+  }
+  @media screen and (max-width: 767px) {
+    max-width: none;
+  }
+}
+
+.cursor {
+  &.active {
+    opacity: 0.5;
+    transform: scale(0);
+  }
+
+  &.hovered {
+    opacity: 0.08;
+  }
+}
+
+.cursor-follower {
+  &.active {
+    opacity: 0.7;
+    transform: scale(3);
+  }
+
+  &.press {
+    transform: scale(2);
+  }
+
+  &.hovered {
+    opacity: 0.08;
+  }
+}
+
+@keyframes bounceInDown {
+  from, 60%, 75%, 90%, to {
+      -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+      animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  0% {
+      opacity: 0;
+      -webkit-transform: translate3d(0, -1000px, 0) scaleY(3);
+      transform: translate3d(0, -1000px, 0) scaleY(3);
+  }
+
+  60% {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 6.25px, 0) scaleY(0.9);
+      transform: translate3d(0, 6.25px, 0) scaleY(0.9);
+  }
+
+  75% {
+      -webkit-transform: translate3d(0, -1.5px, 0) scaleY(0.95);
+      transform: translate3d(0, -1.5px, 0) scaleY(0.95);
+  }
+
+  90% {
+      -webkit-transform: translate3d(0, 1px, 0) scaleY(0.985);
+      transform: translate3d(0, 1px, 0) scaleY(0.985);
+  }
+
+  to {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+  }
+}
+
+* {
+  &[data-aos="bounce"] {
+    &.aos-animate {
+      animation: bounceInDown 0s ease forwards;
+    }
+  }
+  &[data-page="/"] {
+    [data-aos="bounce"] {
+      &.aos-animate {
+        animation: bounceInDown 3s ease forwards;
+      }
+    }
+  }
+}
+
+* {
+  &[data-aos="3d_card"] {
+    span {
+      transition-timing-function: ease;
+      transition-duration: 1s;
+      opacity: 0;
+      transform: translate3d(0,100px,0);
+      transition-property: opacity,transform;
+    }
+    &.aos-animate {
+      span {
+        transition-timing-function: cubic-bezier(.175,.885,.32, 1);
+        opacity: 1;
+        transform: translateZ(0);
+      }
+    }
+  }
+}
